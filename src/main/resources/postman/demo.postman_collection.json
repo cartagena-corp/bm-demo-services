@@ -1,0 +1,41 @@
+{
+	"info": {
+		"_postman_id": "4702c6f1-3358-4531-a481-662cae41f28c",
+		"name": "demo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "47136649",
+		"_collection_link": "https://lunar-module-administrator-24801986-8265567.postman.co/workspace/Diego-Pedrozo-Villarreal's-Work~3c50d0ce-ffa0-42dc-8541-4c0eb1ce0324/collection/47136649-4702c6f1-3358-4531-a481-662cae41f28c?action=share&source=collection_link&creator=47136649"
+	},
+	"item": [
+		{
+			"name": "login-demo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user\": \"123456789\",\r\n    \"password\": \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
