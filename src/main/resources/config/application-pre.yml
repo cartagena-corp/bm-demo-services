@@ -12,7 +12,7 @@ spring:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
 app:
   cors:
-    allowed-origins-patterns: https://mf-home-three.vercel.app
+    allowed-origins-patterns: https://*.cartagenacorporation.com, https://mf-home-three.vercel.app, http://localhost:4200
 demo:
   ws:
     consultar-productos-activos:
