@@ -1,0 +1,24 @@
+server:
+  port: 9001
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5433/demoservices
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+app:
+  cors:
+    allowed-origins-patterns: https://*.cartagenacorporation.com
+demo:
+  ws:
+    consultar-productos-activos:
+      endpoint: https://m9381.wiremockapi.cloud/detalles-cuenta
+      timeout: 120000
+movcli:
+  jaxb:
+    marshaller:
+      packagescan: com.nsbt.demo.model
